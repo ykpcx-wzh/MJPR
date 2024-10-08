@@ -1,0 +1,138 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/Ball.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+
+DEF n WorldInfo {
+  randomSeed 1
+}
+Viewpoint {
+  orientation 0.0071021323921224835 0.9999505713711733 -0.006958055040667687 1.597055319267104
+  position 0.051436811837347635 -0.060960599266649734 2.7396190617902514
+}
+TexturedBackground {
+}
+RectangleArena {
+  wallHeight 0.05
+}
+DEF box3 SolidBox {
+  translation 0.10184335799358624 -0.29184716843894265 0.05
+  rotation 0 0 1 4.692820414042842e-06
+  name "box1(2)"
+  size 0.1 0.1 0.1
+  contactMaterial ""
+  appearance PBRAppearance {
+    baseColor 0.2 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF box4 SolidBox {
+  translation -0.2116573014500583 0.11604592391975344 0.05
+  rotation 0 0 1 4.692820414042842e-06
+  name "box1(1)"
+  size 0.1 0.1 0.1
+  contactMaterial ""
+  appearance PBRAppearance {
+    baseColor 0.2 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF target1 Ball {
+  translation -0.26325260581885745 0.28448372082204987 0.03841724885999688
+  rotation 0.3227149114483204 0.2023263904163025 0.9246183632558962 2.9583419338379464
+  name "ball(5)"
+  color 1 0 0
+  radius 0.04
+  mass 1
+}
+DEF target2 Ball {
+  translation -0.3742843810764306 -0.183330878305618 0.03843206564989184
+  rotation -0.25090208654897433 0.9670094418067563 -0.04405544713150409 2.5842179827991916
+  name "ball(4)"
+  color 1 0 0
+  radius 0.04
+  mass 1
+}
+DEF aqua E-puck {
+  hidden position_0_0 255.28433631633058
+  hidden position_0_1 64.32082241786324
+  hidden linearVelocity_0 -0.017056580981412117 0.01576634432289718 -4.3791317396824204e-05
+  hidden angularVelocity_0 -0.0015810687148638176 0.0018411442585141297 -0.49271843961246353
+  hidden rotation_2 0 1 0 3.956924029147122
+  hidden linearVelocity_2 -0.026219914491418757 0.024635869053694876 8.235784269837202e-06
+  hidden angularVelocity_2 -1.1924743425187427 -1.3585634374154942 -0.4834985112559706
+  hidden rotation_3 0 1 0 1.488969346067376
+  hidden linearVelocity_3 -0.008001932417442273 0.006940631939574167 9.505453579068144e-05
+  hidden angularVelocity_3 -3.5137334837912344 -3.9783692998437363 -0.4455735006681404
+  translation 0.02037044995692131 0.43592078740009677 -9.860134118507696e-05
+  rotation 0.00030000023047011806 0.0008864705328485333 0.9999995620848322 2.395264595224664
+  window "<generic>"
+}
+DEF target3 Ball {
+  translation 0.3699549284680154 0.006195382509935296 0.03841724311763244
+  rotation 0.011010561368693375 0.10192416848960487 0.9947312357697674 0.25489401791976796
+  name "ball(3)"
+  color 1 0 0
+  radius 0.04
+  mass 1
+}
+DEF box2 SolidBox {
+  translation -0.28040387530964045 -0.033852853507431224 0.05
+  rotation 0 0 1 4.692820414042842e-06
+  name "box2"
+  size 0.1 0.1 0.1
+  contactMaterial ""
+  appearance PBRAppearance {
+    baseColor 0.2 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF box1 SolidBox {
+  translation 0.29728749125319187 0.1691166503836925 0.05
+  rotation 0 0 1 4.692820414042842e-06
+  name "box1"
+  size 0.1 0.1 0.1
+  contactMaterial ""
+  appearance PBRAppearance {
+    baseColor 0.2 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+TexturedBackgroundLight {
+}
