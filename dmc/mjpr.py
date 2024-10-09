@@ -506,7 +506,6 @@ class SPR(nn.Module):
         spr_loss_depth = global_loss_depth.view(-1, observation_depth.shape[1])
         return spr_loss_image, spr_loss_depth
 
-
 class mjpr(object):
     """SPR representation learning with SAC."""
 
@@ -593,9 +592,9 @@ class mjpr(object):
         self.target_entropy = -np.prod(action_shape)
         self.curl = CURL(50).to(device)
         self.awl=AutomaticWeightedLoss(num=2)
-        self.awl_optimizer= torch.optim.Adam(self.actor.parameters(),
-                                                lr=actor_lr,
-                                                betas=(actor_beta, 0.999))
+        self.awl_optimizer= torch.optim.Adam(self.awl.parameters(),
+                                                lr=critic_lr,
+                                                betas=(critic_beta, 0.999))
         # optimizers
         self.actor_optimizer = torch.optim.Adam(self.actor.parameters(),
                                                 lr=actor_lr,
@@ -872,3 +871,4 @@ class mjpr(object):
             torch.load('%s/actor_%s.pt' % (model_dir, step)))
         self.critic.load_state_dict(
             torch.load('%s/critic_%s.pt' % (model_dir, step)))
+
