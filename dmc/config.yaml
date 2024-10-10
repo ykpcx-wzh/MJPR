@@ -44,7 +44,7 @@ alpha_lr: 1e-4
 alpha_beta: 0.5
 # cycdm
 
-jumps: 1
+jumps: 5
 transition_model_type: 'deterministic'
 transition_model_layer_width: 512
 latent_dim: 100
