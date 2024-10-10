@@ -4,4 +4,4 @@
 > The settings of DMC experiment are shown in this figure.
 ![Image text](https://github.com/ykpcx-wzh/MJPR/blob/main/img/Settings.png)
 > The settings of Webots experiment are shown in this figure.
-> ![Image text](https://github.com/ykpcx-wzh/MJPR/blob/main/img/Webots_ettings.png)
+> ![Image text](https://github.com/ykpcx-wzh/MJPR/blob/main/img/Webots_settings.png)
